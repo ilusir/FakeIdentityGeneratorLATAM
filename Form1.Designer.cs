@@ -42,9 +42,9 @@
             this.LabelRespNum = new System.Windows.Forms.Label();
             this.LabelRespGen = new System.Windows.Forms.Label();
             this.LabelRespEdad = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CBGen = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CBPais = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -56,8 +56,16 @@
             this.BtnCopy4 = new System.Windows.Forms.Button();
             this.BtnCopy5 = new System.Windows.Forms.Button();
             this.BtnCopy6 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LabelRespFecha = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.BtnGenerate1 = new System.Windows.Forms.Button();
+            this.BtnGenerate2 = new System.Windows.Forms.Button();
+            this.BtnGenerate3 = new System.Windows.Forms.Button();
+            this.BtnGenerate4 = new System.Windows.Forms.Button();
+            this.BtnGenerate5 = new System.Windows.Forms.Button();
+            this.BtnGenerate6 = new System.Windows.Forms.Button();
+            this.BtnGenerate7 = new System.Windows.Forms.Button();
+            this.BtnCopy7 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -186,18 +194,18 @@
             this.LabelRespEdad.Size = new System.Drawing.Size(0, 20);
             this.LabelRespEdad.TabIndex = 12;
             // 
-            // comboBox1
+            // CBGen
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CBGen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBGen.FormattingEnabled = true;
+            this.CBGen.Items.AddRange(new object[] {
             "Aleatorio",
             "Hombre",
             "Mujer"});
-            this.comboBox1.Location = new System.Drawing.Point(70, 85);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 28);
-            this.comboBox1.TabIndex = 13;
+            this.CBGen.Location = new System.Drawing.Point(70, 85);
+            this.CBGen.Name = "CBGen";
+            this.CBGen.Size = new System.Drawing.Size(183, 28);
+            this.CBGen.TabIndex = 13;
             // 
             // label11
             // 
@@ -208,21 +216,21 @@
             this.label11.TabIndex = 14;
             this.label11.Text = "Género:";
             // 
-            // comboBox2
+            // CBPais
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CBPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBPais.FormattingEnabled = true;
+            this.CBPais.Items.AddRange(new object[] {
             "Aleatorio",
             "Argentina",
             "Chile",
             "Ecuador",
             "México",
             "Perú"});
-            this.comboBox2.Location = new System.Drawing.Point(300, 85);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 28);
-            this.comboBox2.TabIndex = 15;
+            this.CBPais.Location = new System.Drawing.Point(300, 85);
+            this.CBPais.Name = "CBPais";
+            this.CBPais.Size = new System.Drawing.Size(183, 28);
+            this.CBPais.TabIndex = 15;
             // 
             // label12
             // 
@@ -234,7 +242,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(592, 197);
+            this.pictureBox1.Location = new System.Drawing.Point(623, 274);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(187, 172);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -265,9 +273,8 @@
             this.LabelRespPais.AutoSize = true;
             this.LabelRespPais.Location = new System.Drawing.Point(215, 320);
             this.LabelRespPais.Name = "LabelRespPais";
-            this.LabelRespPais.Size = new System.Drawing.Size(36, 20);
+            this.LabelRespPais.Size = new System.Drawing.Size(0, 20);
             this.LabelRespPais.TabIndex = 20;
-            this.LabelRespPais.Text = "pais";
             // 
             // BtnCopy1
             // 
@@ -329,14 +336,13 @@
             this.BtnCopy6.UseVisualStyleBackColor = true;
             this.BtnCopy6.Click += new System.EventHandler(this.CopyButton_Click);
             // 
-            // label3
+            // LabelRespFecha
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(215, 349);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 20);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "pais";
+            this.LabelRespFecha.AutoSize = true;
+            this.LabelRespFecha.Location = new System.Drawing.Point(215, 349);
+            this.LabelRespFecha.Name = "LabelRespFecha";
+            this.LabelRespFecha.Size = new System.Drawing.Size(0, 20);
+            this.LabelRespFecha.TabIndex = 28;
             // 
             // label7
             // 
@@ -348,12 +354,100 @@
             this.label7.TabIndex = 27;
             this.label7.Text = "Fecha Nacimiento:";
             // 
+            // BtnGenerate1
+            // 
+            this.BtnGenerate1.Location = new System.Drawing.Point(473, 169);
+            this.BtnGenerate1.Name = "BtnGenerate1";
+            this.BtnGenerate1.Size = new System.Drawing.Size(31, 28);
+            this.BtnGenerate1.TabIndex = 29;
+            this.BtnGenerate1.Text = "G";
+            this.BtnGenerate1.UseVisualStyleBackColor = true;
+            this.BtnGenerate1.Click += new System.EventHandler(this.Regenerar);
+            // 
+            // BtnGenerate2
+            // 
+            this.BtnGenerate2.Location = new System.Drawing.Point(473, 203);
+            this.BtnGenerate2.Name = "BtnGenerate2";
+            this.BtnGenerate2.Size = new System.Drawing.Size(31, 28);
+            this.BtnGenerate2.TabIndex = 30;
+            this.BtnGenerate2.Text = "G";
+            this.BtnGenerate2.UseVisualStyleBackColor = true;
+            this.BtnGenerate2.Click += new System.EventHandler(this.Regenerar);
+            // 
+            // BtnGenerate3
+            // 
+            this.BtnGenerate3.Location = new System.Drawing.Point(473, 232);
+            this.BtnGenerate3.Name = "BtnGenerate3";
+            this.BtnGenerate3.Size = new System.Drawing.Size(31, 28);
+            this.BtnGenerate3.TabIndex = 31;
+            this.BtnGenerate3.Text = "G";
+            this.BtnGenerate3.UseVisualStyleBackColor = true;
+            this.BtnGenerate3.Click += new System.EventHandler(this.Regenerar);
+            // 
+            // BtnGenerate4
+            // 
+            this.BtnGenerate4.Location = new System.Drawing.Point(473, 262);
+            this.BtnGenerate4.Name = "BtnGenerate4";
+            this.BtnGenerate4.Size = new System.Drawing.Size(31, 28);
+            this.BtnGenerate4.TabIndex = 32;
+            this.BtnGenerate4.Text = "G";
+            this.BtnGenerate4.UseVisualStyleBackColor = true;
+            this.BtnGenerate4.Click += new System.EventHandler(this.Regenerar);
+            // 
+            // BtnGenerate5
+            // 
+            this.BtnGenerate5.Location = new System.Drawing.Point(473, 291);
+            this.BtnGenerate5.Name = "BtnGenerate5";
+            this.BtnGenerate5.Size = new System.Drawing.Size(31, 28);
+            this.BtnGenerate5.TabIndex = 33;
+            this.BtnGenerate5.Text = "G";
+            this.BtnGenerate5.UseVisualStyleBackColor = true;
+            this.BtnGenerate5.Click += new System.EventHandler(this.Regenerar);
+            // 
+            // BtnGenerate6
+            // 
+            this.BtnGenerate6.Location = new System.Drawing.Point(473, 320);
+            this.BtnGenerate6.Name = "BtnGenerate6";
+            this.BtnGenerate6.Size = new System.Drawing.Size(31, 28);
+            this.BtnGenerate6.TabIndex = 34;
+            this.BtnGenerate6.Text = "G";
+            this.BtnGenerate6.UseVisualStyleBackColor = true;
+            this.BtnGenerate6.Click += new System.EventHandler(this.Regenerar);
+            // 
+            // BtnGenerate7
+            // 
+            this.BtnGenerate7.Location = new System.Drawing.Point(473, 349);
+            this.BtnGenerate7.Name = "BtnGenerate7";
+            this.BtnGenerate7.Size = new System.Drawing.Size(31, 28);
+            this.BtnGenerate7.TabIndex = 35;
+            this.BtnGenerate7.Text = "G";
+            this.BtnGenerate7.UseVisualStyleBackColor = true;
+            this.BtnGenerate7.Click += new System.EventHandler(this.Regenerar);
+            // 
+            // BtnCopy7
+            // 
+            this.BtnCopy7.Location = new System.Drawing.Point(510, 349);
+            this.BtnCopy7.Name = "BtnCopy7";
+            this.BtnCopy7.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy7.TabIndex = 36;
+            this.BtnCopy7.Text = "C";
+            this.BtnCopy7.UseVisualStyleBackColor = true;
+            this.BtnCopy7.Click += new System.EventHandler(this.CopyButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 482);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.BtnCopy7);
+            this.Controls.Add(this.BtnGenerate7);
+            this.Controls.Add(this.BtnGenerate6);
+            this.Controls.Add(this.BtnGenerate5);
+            this.Controls.Add(this.BtnGenerate4);
+            this.Controls.Add(this.BtnGenerate3);
+            this.Controls.Add(this.BtnGenerate2);
+            this.Controls.Add(this.BtnGenerate1);
+            this.Controls.Add(this.LabelRespFecha);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.BtnCopy6);
             this.Controls.Add(this.BtnCopy5);
@@ -366,9 +460,9 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.CBPais);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CBGen);
             this.Controls.Add(this.LabelRespEdad);
             this.Controls.Add(this.LabelRespGen);
             this.Controls.Add(this.LabelRespNum);
@@ -409,9 +503,9 @@
         private Label LabelRespNum;
         private Label LabelRespGen;
         private Label LabelRespEdad;
-        private ComboBox comboBox1;
+        private ComboBox CBGen;
         private Label label11;
-        private ComboBox comboBox2;
+        private ComboBox CBPais;
         private Label label12;
         private PictureBox pictureBox1;
         private Label label13;
@@ -423,7 +517,15 @@
         private Button BtnCopy4;
         private Button BtnCopy5;
         private Button BtnCopy6;
-        private Label label3;
+        private Label LabelRespFecha;
         private Label label7;
+        private Button BtnGenerate1;
+        private Button BtnGenerate2;
+        private Button BtnGenerate3;
+        private Button BtnGenerate4;
+        private Button BtnGenerate5;
+        private Button BtnGenerate6;
+        private Button BtnGenerate7;
+        private Button BtnCopy7;
     }
 }

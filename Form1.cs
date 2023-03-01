@@ -1,9 +1,3 @@
-using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Net;
-using System.Net.Sockets;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 
 namespace Simple_Fake_Identity_Generator
 {
@@ -19,22 +13,16 @@ namespace Simple_Fake_Identity_Generator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedItem = "Aleatorio";
-            comboBox2.SelectedItem = "Aleatorio";
+            CBGen.SelectedItem = "Aleatorio";
+            CBPais.SelectedItem = "Aleatorio";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             NameGenerator();
             DNICalculator();
-            
             NumberPhoneGenerator();
-            LabelRespEdad.Text = (DateTime.Now.Year - persona.FechaNacimiento.Year).ToString();
-            LabelRespNombre.Text = persona.NombreCompleto;
-            LabelRespGen.Text = persona.Genero;
-            LabelRespDNI.Text = persona.DNI;
             LabelRespNum.Text = persona.Numero;
-            label3.Text = persona.FechaNacimiento.ToString();
             //RandomImage();
         }
 
@@ -47,23 +35,28 @@ namespace Simple_Fake_Identity_Generator
 
         private void NameGenerator()
         {
-            switch (comboBox1.Text)
+            switch (CBGen.Text)
             {
                 case "Hombre":
                     persona.NombreCompleto = ManNameGenerator();
                     persona.Genero = "Hombre";
-                    comboBox1.Text = "Aleatorio";
+                    LabelRespNombre.Text = persona.NombreCompleto;
+                    LabelRespGen.Text = persona.Genero;
+                    CBGen.Text = "Aleatorio";
+
                     break;
                 case "Mujer":
                     persona.NombreCompleto = WomanNameGenerator();
                     persona.Genero = "Mujer";
-                    comboBox1.Text = "Aleatorio";
+                    LabelRespNombre.Text = persona.NombreCompleto;
+                    LabelRespGen.Text = persona.Genero;
+                    CBGen.Text = "Aleatorio";
                     break;
                 case "Aleatorio":
                     Random rand = new();
                     string[] gender = { "Hombre", "Mujer" };
                     string random = gender[rand.Next(gender.Length)];
-                    comboBox1.Text = random;
+                    CBGen.Text = random;
                     NameGenerator();
                     break;
             }
@@ -93,6 +86,9 @@ namespace Simple_Fake_Identity_Generator
         {
             persona.FechaNacimiento = GenerarFecha();
             persona.DNI = GenerarDNI();
+            LabelRespEdad.Text = (DateTime.Now.Year - persona.FechaNacimiento.Year).ToString();
+            LabelRespDNI.Text = persona.DNI;
+            LabelRespFecha.Text = persona.FechaNacimiento.ToString();
         }
 
 
@@ -106,7 +102,7 @@ namespace Simple_Fake_Identity_Generator
             string dni = string.Format("{0:00}{1:00}{2:0000}", dia, mes, anio);
             d = Convert.ToInt32(dni);
 
-            switch (comboBox2.Text)
+            switch (CBPais.Text)
             {
                 case "Argentina":
                     a = DigitoDNIAR(d);
@@ -198,7 +194,8 @@ namespace Simple_Fake_Identity_Generator
         private static string NumberPhoneCalculator()
         {
             Random random = new();
-            string a = "+56 ", b = "9", e, f;
+            string[] a = {"+56", "+59", "+54"};
+            string b = "9", e, f;
             int c, d;
             c = random.Next(999, 10000);
             d = random.Next(999, 10000);
@@ -242,6 +239,42 @@ namespace Simple_Fake_Identity_Generator
             else if (sender == BtnCopy6)
             {
                 Clipboard.SetText(LabelRespPais.Text);
+            }
+            else if (sender == BtnCopy7)
+            {
+                Clipboard.SetText(LabelRespFecha.Text);
+            }
+        }
+
+        private void Regenerar(object sender, EventArgs e)
+        {
+            if (sender == BtnGenerate1)
+            {
+                NameGenerator();
+            }
+            else if (sender == BtnGenerate2)
+            {   
+                DNICalculator();
+            }
+            else if (sender == BtnGenerate3)
+            {
+                NumberPhoneGenerator();
+            }
+            else if (sender == BtnGenerate4)
+            {
+                LabelRespGen.Text = persona.Genero;
+            }
+            else if (sender == BtnGenerate5)
+            {
+                DNICalculator();
+            }
+            else if (sender == BtnGenerate6)
+            {
+                LabelRespPais.Text = persona.Pais;
+            }
+            else if (sender == BtnGenerate7)
+            {
+                LabelRespFecha.Text = persona.FechaNacimiento.ToString();
             }
         }
     }
