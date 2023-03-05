@@ -1,4 +1,6 @@
 
+using System.Net;
+
 namespace Simple_Fake_Identity_Generator
 {
     public partial class Form1 : Form
@@ -23,6 +25,7 @@ namespace Simple_Fake_Identity_Generator
             DNICalculator();
             NumberPhoneGenerator();
             LabelRespNum.Text = persona.Numero;
+            UserNameGenerator();
             //RandomImage();
         }
 
@@ -64,20 +67,20 @@ namespace Simple_Fake_Identity_Generator
 
         private static string ManNameGenerator()
         {
-            string firstname = SelectRandomLine("data/frecuentnames_chilean_male.txt");
-            string secondname = SelectRandomLine("data/frecuentnames_chilean_male.txt");
-            string lastname1 = SelectRandomLine("data/frecuentlastnames_chilean.txt");
-            string lastname2 = SelectRandomLine("data/frecuentlastnames_chilean.txt");
+            string firstname = SelectRandomLine("data/frecuentnames_male.txt");
+            string secondname = SelectRandomLine("data/frecuentnames_male.txt");
+            string lastname1 = SelectRandomLine("data/frecuentlastnames.txt");
+            string lastname2 = SelectRandomLine("data/frecuentlastnames.txt");
             string final = string.Join(" ", firstname, secondname, lastname1, lastname2);
             return final;
         }
 
         private static string WomanNameGenerator()
         {
-            string firstname = SelectRandomLine("data/frecuentnames_chilean_female.txt");
-            string secondname = SelectRandomLine("data/frecuentnames_chilean_female.txt");
-            string lastname1 = SelectRandomLine("data/frecuentlastnames_chilean.txt");
-            string lastname2 = SelectRandomLine("data/frecuentlastnames_chilean.txt");
+            string firstname = SelectRandomLine("data/frecuentnames_female.txt");
+            string secondname = SelectRandomLine("data/frecuentnames_female.txt");
+            string lastname1 = SelectRandomLine("data/frecuentlastnames.txt");
+            string lastname2 = SelectRandomLine("data/frecuentlastnames.txt");
             string final = string.Join(" ", firstname, secondname, lastname1, lastname2);
             return final;
         }
@@ -159,7 +162,7 @@ namespace Simple_Fake_Identity_Generator
         public static string DigitoDNIAR(int dni)
         {
             var digits = dni.ToString().Select(t => int.Parse(t.ToString())).ToArray();
-            char[] letras = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' }; // Tabla de letras correspondientes a los números
+            char[] letras = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' };
             int suma = 0;
 
             for (int i = 0; i < digits.Length; i++)
@@ -186,9 +189,38 @@ namespace Simple_Fake_Identity_Generator
             return verificador.ToString();
         }
 
+        private static async Task<Image> DownloadImageAsync()
+        {
+            using (var client = new HttpClient())
+            {
+                // URL de la imagen a descargar
+                string imageUrl = "https://fastly.picsum.photos/id/482/200/300.jpg?hmac=sZqH9D718kRNYORntdoWP-EehCC83NaK3M-KTWvABIg";
+
+                // Descargar la imagen como una matriz de bytes
+                byte[] imageBytes = await client.GetByteArrayAsync(imageUrl);
+
+                // Guardar la imagen en un archivo en disco
+                string imagePath = "image.jpg";
+                File.WriteAllBytes(imagePath, imageBytes);
+                return Image.FromFile(imagePath);
+            }
+        }
+
         private void NumberPhoneGenerator()
         {
             LabelRespNum.Text = NumberPhoneCalculator();
+        }
+
+        private void UserNameGenerator()
+        {
+            LabelRespUsername.Text = UserNameCreator();
+        }
+
+        private static string UserNameCreator()
+        {
+            string a = SelectRandomLine("data/adjetivos.txt");
+            string b = SelectRandomLine("data/sustantivos.txt");
+            return string.Concat(a, b);
         }
 
         private static string NumberPhoneCalculator()
