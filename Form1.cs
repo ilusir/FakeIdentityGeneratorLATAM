@@ -1,11 +1,11 @@
-
+using NBitcoin;
 using System.Net;
 
 namespace Simple_Fake_Identity_Generator
 {
     public partial class Form1 : Form
     {
-        Persona persona = new();
+        readonly Persona persona = new();
 
         public Form1()
         {
@@ -26,6 +26,8 @@ namespace Simple_Fake_Identity_Generator
             NumberPhoneGenerator();
             LabelRespNum.Text = persona.Numero;
             UserNameGenerator();
+            GenerarVisa();
+            GenerarBitcoin();
             //RandomImage();
         }
 
@@ -216,6 +218,20 @@ namespace Simple_Fake_Identity_Generator
             LabelRespUsername.Text = UserNameCreator();
         }
 
+        private void GenerarVisa()
+        {
+            string tarjeta = GenerarTarjetaVISA();
+            LabelRespNumCreditCard.Text = tarjeta;
+            persona.CreditCardNum = tarjeta;
+        }
+
+        private void GenerarBitcoin()
+        {
+            string direccion = GenerarDireccionBitcoin();
+            LabelRespBitcoinAddress.Text = direccion;
+            persona.BitcoinAddress = direccion;
+        }
+
         private static string UserNameCreator()
         {
             string a = SelectRandomLine("data/adjetivos.txt");
@@ -246,6 +262,48 @@ namespace Simple_Fake_Identity_Generator
             return new DateTime(c, b, a);
         }
 
+        private static string GenerarTarjetaVISA()
+        {
+            Random random = new Random();
+            string iin = "4"; // IIN de Visa
+            string accountNumber = "";
+            for (int i = 0; i < 9; i++)
+            {
+                accountNumber += random.Next(0, 10).ToString();
+            }
+            string cardNumber = iin + accountNumber;
+
+            int sum = 0;
+            bool isSecondDigit = false;
+            for (int i = cardNumber.Length - 1; i >= 0; i--)
+            {
+                int digit = int.Parse(cardNumber[i].ToString());
+                if (isSecondDigit)
+                {
+                    digit *= 2;
+                    if (digit > 9)
+                    {
+                        digit -= 9;
+                    }
+                }
+                sum += digit;
+                isSecondDigit = !isSecondDigit;
+            }
+            int checkDigit = (sum * 9) % 10;
+            cardNumber += checkDigit.ToString();
+            return cardNumber;
+        }
+        
+        string GenerarDireccionBitcoin()
+        {
+            Key privateKey = new();
+
+            BitcoinSecret bitcoinSecret = privateKey.GetBitcoinSecret(Network.Main);
+            BitcoinAddress bitcoinAddress = bitcoinSecret.GetAddress(ScriptPubKeyType.Legacy);
+            return bitcoinAddress.ToString();
+        }
+
+
         private void CopyButton_Click(object sender, EventArgs e)
         {
             if (sender == BtnCopy1)
@@ -273,6 +331,42 @@ namespace Simple_Fake_Identity_Generator
                 Clipboard.SetText(LabelRespPais.Text);
             }
             else if (sender == BtnCopy7)
+            {
+                Clipboard.SetText(LabelRespFecha.Text);
+            }
+            else if (sender == BtnCopy8)
+            {
+                Clipboard.SetText(LabelRespAlturaPeso.Text);
+            }
+            else if (sender == BtnCopy9)
+            {
+                Clipboard.SetText(LabelRespColorFav.Text);
+            }
+            else if (sender == BtnCopy10)
+            {
+                Clipboard.SetText(LabelRespNumCreditCard.Text);
+            }
+            else if (sender == BtnCopy11)
+            {
+                Clipboard.SetText(LabelRespFecha.Text);
+            }
+            else if (sender == BtnCopy12)
+            {
+                Clipboard.SetText(LabelRespFecha.Text);
+            }
+            else if (sender == BtnCopy13)
+            {
+                Clipboard.SetText(LabelRespBitcoinAddress.Text);
+            }
+            else if (sender == BtnCopy14)
+            {
+                Clipboard.SetText(LabelRespFecha.Text);
+            }
+            else if (sender == BtnCopy15)
+            {
+                Clipboard.SetText(LabelRespFecha.Text);
+            }
+            else if (sender == BtnCopy16)
             {
                 Clipboard.SetText(LabelRespFecha.Text);
             }

@@ -67,34 +67,34 @@
             this.BtnCopy7 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnCopy10 = new System.Windows.Forms.Button();
+            this.BtnCopy16 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.LabelRespNumCreditCard = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.BtnCopy12 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.BtnCopy11 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
+            this.BtnCopy13 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.BtnCopy14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
+            this.BtnCopy15 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.LabelRespBitcoinAddress = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
@@ -121,14 +121,14 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
+            this.BtnCopy8 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.button30 = new System.Windows.Forms.Button();
+            this.LabelRespAlturaPeso = new System.Windows.Forms.Label();
+            this.BtnCopy9 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
+            this.LabelRespColorFav = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,7 +160,7 @@
             this.helpToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1075, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1197, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -329,7 +329,7 @@
             // 
             // BtnCopy1
             // 
-            this.BtnCopy1.Location = new System.Drawing.Point(468, 235);
+            this.BtnCopy1.Location = new System.Drawing.Point(535, 235);
             this.BtnCopy1.Name = "BtnCopy1";
             this.BtnCopy1.Size = new System.Drawing.Size(31, 28);
             this.BtnCopy1.TabIndex = 21;
@@ -339,7 +339,7 @@
             // 
             // BtnCopy2
             // 
-            this.BtnCopy2.Location = new System.Drawing.Point(468, 268);
+            this.BtnCopy2.Location = new System.Drawing.Point(535, 268);
             this.BtnCopy2.Name = "BtnCopy2";
             this.BtnCopy2.Size = new System.Drawing.Size(31, 28);
             this.BtnCopy2.TabIndex = 22;
@@ -349,7 +349,7 @@
             // 
             // BtnCopy3
             // 
-            this.BtnCopy3.Location = new System.Drawing.Point(468, 298);
+            this.BtnCopy3.Location = new System.Drawing.Point(535, 298);
             this.BtnCopy3.Name = "BtnCopy3";
             this.BtnCopy3.Size = new System.Drawing.Size(31, 28);
             this.BtnCopy3.TabIndex = 23;
@@ -359,7 +359,7 @@
             // 
             // BtnCopy4
             // 
-            this.BtnCopy4.Location = new System.Drawing.Point(468, 328);
+            this.BtnCopy4.Location = new System.Drawing.Point(535, 328);
             this.BtnCopy4.Name = "BtnCopy4";
             this.BtnCopy4.Size = new System.Drawing.Size(31, 28);
             this.BtnCopy4.TabIndex = 24;
@@ -369,7 +369,7 @@
             // 
             // BtnCopy5
             // 
-            this.BtnCopy5.Location = new System.Drawing.Point(468, 357);
+            this.BtnCopy5.Location = new System.Drawing.Point(535, 357);
             this.BtnCopy5.Name = "BtnCopy5";
             this.BtnCopy5.Size = new System.Drawing.Size(31, 28);
             this.BtnCopy5.TabIndex = 25;
@@ -379,7 +379,7 @@
             // 
             // BtnCopy6
             // 
-            this.BtnCopy6.Location = new System.Drawing.Point(468, 386);
+            this.BtnCopy6.Location = new System.Drawing.Point(535, 386);
             this.BtnCopy6.Name = "BtnCopy6";
             this.BtnCopy6.Size = new System.Drawing.Size(31, 28);
             this.BtnCopy6.TabIndex = 26;
@@ -407,7 +407,7 @@
             // 
             // BtnGenerate1
             // 
-            this.BtnGenerate1.Location = new System.Drawing.Point(431, 235);
+            this.BtnGenerate1.Location = new System.Drawing.Point(498, 235);
             this.BtnGenerate1.Name = "BtnGenerate1";
             this.BtnGenerate1.Size = new System.Drawing.Size(31, 28);
             this.BtnGenerate1.TabIndex = 29;
@@ -417,7 +417,7 @@
             // 
             // BtnGenerate2
             // 
-            this.BtnGenerate2.Location = new System.Drawing.Point(431, 269);
+            this.BtnGenerate2.Location = new System.Drawing.Point(498, 269);
             this.BtnGenerate2.Name = "BtnGenerate2";
             this.BtnGenerate2.Size = new System.Drawing.Size(31, 28);
             this.BtnGenerate2.TabIndex = 30;
@@ -427,7 +427,7 @@
             // 
             // BtnGenerate3
             // 
-            this.BtnGenerate3.Location = new System.Drawing.Point(431, 298);
+            this.BtnGenerate3.Location = new System.Drawing.Point(498, 298);
             this.BtnGenerate3.Name = "BtnGenerate3";
             this.BtnGenerate3.Size = new System.Drawing.Size(31, 28);
             this.BtnGenerate3.TabIndex = 31;
@@ -437,7 +437,7 @@
             // 
             // BtnGenerate4
             // 
-            this.BtnGenerate4.Location = new System.Drawing.Point(431, 328);
+            this.BtnGenerate4.Location = new System.Drawing.Point(498, 328);
             this.BtnGenerate4.Name = "BtnGenerate4";
             this.BtnGenerate4.Size = new System.Drawing.Size(31, 28);
             this.BtnGenerate4.TabIndex = 32;
@@ -447,7 +447,7 @@
             // 
             // BtnGenerate5
             // 
-            this.BtnGenerate5.Location = new System.Drawing.Point(431, 357);
+            this.BtnGenerate5.Location = new System.Drawing.Point(498, 357);
             this.BtnGenerate5.Name = "BtnGenerate5";
             this.BtnGenerate5.Size = new System.Drawing.Size(31, 28);
             this.BtnGenerate5.TabIndex = 33;
@@ -457,7 +457,7 @@
             // 
             // BtnGenerate6
             // 
-            this.BtnGenerate6.Location = new System.Drawing.Point(431, 386);
+            this.BtnGenerate6.Location = new System.Drawing.Point(498, 386);
             this.BtnGenerate6.Name = "BtnGenerate6";
             this.BtnGenerate6.Size = new System.Drawing.Size(31, 28);
             this.BtnGenerate6.TabIndex = 34;
@@ -467,7 +467,7 @@
             // 
             // BtnGenerate7
             // 
-            this.BtnGenerate7.Location = new System.Drawing.Point(431, 415);
+            this.BtnGenerate7.Location = new System.Drawing.Point(498, 415);
             this.BtnGenerate7.Name = "BtnGenerate7";
             this.BtnGenerate7.Size = new System.Drawing.Size(31, 28);
             this.BtnGenerate7.TabIndex = 35;
@@ -477,7 +477,7 @@
             // 
             // BtnCopy7
             // 
-            this.BtnCopy7.Location = new System.Drawing.Point(468, 415);
+            this.BtnCopy7.Location = new System.Drawing.Point(535, 415);
             this.BtnCopy7.Name = "BtnCopy7";
             this.BtnCopy7.Size = new System.Drawing.Size(31, 28);
             this.BtnCopy7.TabIndex = 36;
@@ -499,35 +499,37 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(573, 166);
+            this.label8.Location = new System.Drawing.Point(674, 166);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(318, 41);
             this.label8.TabIndex = 66;
             this.label8.Text = "Información Bancaria";
             // 
-            // button2
+            // BtnCopy10
             // 
-            this.button2.Location = new System.Drawing.Point(972, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 28);
-            this.button2.TabIndex = 50;
-            this.button2.Text = "C";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnCopy10.Location = new System.Drawing.Point(1073, 235);
+            this.BtnCopy10.Name = "BtnCopy10";
+            this.BtnCopy10.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy10.TabIndex = 50;
+            this.BtnCopy10.Text = "C";
+            this.BtnCopy10.UseVisualStyleBackColor = true;
+            this.BtnCopy10.Click += new System.EventHandler(this.CopyButton_Click);
             // 
-            // button3
+            // BtnCopy16
             // 
-            this.button3.Location = new System.Drawing.Point(972, 415);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(31, 28);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "C";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnCopy16.Location = new System.Drawing.Point(1073, 415);
+            this.BtnCopy16.Name = "BtnCopy16";
+            this.BtnCopy16.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy16.TabIndex = 65;
+            this.BtnCopy16.Text = "C";
+            this.BtnCopy16.UseVisualStyleBackColor = true;
+            this.BtnCopy16.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(573, 239);
+            this.label9.Location = new System.Drawing.Point(674, 239);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(144, 20);
             this.label9.TabIndex = 38;
@@ -535,35 +537,37 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(935, 415);
+            this.button4.Location = new System.Drawing.Point(1036, 415);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(31, 28);
             this.button4.TabIndex = 64;
             this.button4.Text = "G";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Regenerar);
             // 
-            // label10
+            // LabelRespNumCreditCard
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(718, 239);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 20);
-            this.label10.TabIndex = 39;
+            this.LabelRespNumCreditCard.AutoSize = true;
+            this.LabelRespNumCreditCard.Location = new System.Drawing.Point(819, 239);
+            this.LabelRespNumCreditCard.Name = "LabelRespNumCreditCard";
+            this.LabelRespNumCreditCard.Size = new System.Drawing.Size(0, 20);
+            this.LabelRespNumCreditCard.TabIndex = 39;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(935, 386);
+            this.button5.Location = new System.Drawing.Point(1036, 386);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(31, 28);
             this.button5.TabIndex = 63;
             this.button5.Text = "G";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Regenerar);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(573, 268);
+            this.label15.Location = new System.Drawing.Point(674, 268);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(165, 20);
             this.label15.TabIndex = 40;
@@ -571,82 +575,88 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(935, 357);
+            this.button6.Location = new System.Drawing.Point(1036, 357);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(31, 28);
             this.button6.TabIndex = 62;
             this.button6.Text = "G";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Regenerar);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(573, 298);
+            this.label16.Location = new System.Drawing.Point(674, 298);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(42, 20);
             this.label16.TabIndex = 41;
             this.label16.Text = "CVV:";
             // 
-            // button7
+            // BtnCopy12
             // 
-            this.button7.Location = new System.Drawing.Point(972, 298);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(31, 28);
-            this.button7.TabIndex = 52;
-            this.button7.Text = "C";
-            this.button7.UseVisualStyleBackColor = true;
+            this.BtnCopy12.Location = new System.Drawing.Point(1073, 298);
+            this.BtnCopy12.Name = "BtnCopy12";
+            this.BtnCopy12.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy12.TabIndex = 52;
+            this.BtnCopy12.Text = "C";
+            this.BtnCopy12.UseVisualStyleBackColor = true;
+            this.BtnCopy12.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(935, 328);
+            this.button8.Location = new System.Drawing.Point(1036, 328);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(31, 28);
             this.button8.TabIndex = 61;
             this.button8.Text = "G";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.Regenerar);
             // 
-            // button9
+            // BtnCopy11
             // 
-            this.button9.Location = new System.Drawing.Point(972, 268);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(31, 28);
-            this.button9.TabIndex = 51;
-            this.button9.Text = "C";
-            this.button9.UseVisualStyleBackColor = true;
+            this.BtnCopy11.Location = new System.Drawing.Point(1073, 268);
+            this.BtnCopy11.Name = "BtnCopy11";
+            this.BtnCopy11.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy11.TabIndex = 51;
+            this.BtnCopy11.Text = "C";
+            this.BtnCopy11.UseVisualStyleBackColor = true;
+            this.BtnCopy11.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(573, 328);
+            this.label17.Location = new System.Drawing.Point(674, 328);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(152, 20);
             this.label17.TabIndex = 42;
             this.label17.Text = "Dirección de Bitcoin:";
             // 
-            // button10
+            // BtnCopy13
             // 
-            this.button10.Location = new System.Drawing.Point(972, 328);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(31, 28);
-            this.button10.TabIndex = 53;
-            this.button10.Text = "C";
-            this.button10.UseVisualStyleBackColor = true;
+            this.BtnCopy13.Location = new System.Drawing.Point(1073, 328);
+            this.BtnCopy13.Name = "BtnCopy13";
+            this.BtnCopy13.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy13.TabIndex = 53;
+            this.BtnCopy13.Text = "C";
+            this.BtnCopy13.UseVisualStyleBackColor = true;
+            this.BtnCopy13.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(935, 298);
+            this.button11.Location = new System.Drawing.Point(1036, 298);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(31, 28);
             this.button11.TabIndex = 60;
             this.button11.Text = "G";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.Regenerar);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(718, 386);
+            this.label18.Location = new System.Drawing.Point(819, 386);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(0, 20);
             this.label18.TabIndex = 49;
@@ -655,35 +665,37 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(573, 357);
+            this.label19.Location = new System.Drawing.Point(674, 357);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(147, 20);
             this.label19.TabIndex = 43;
             this.label19.Text = "Dirección de Ripple:";
             // 
-            // button12
+            // BtnCopy14
             // 
-            this.button12.Location = new System.Drawing.Point(972, 357);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(31, 28);
-            this.button12.TabIndex = 54;
-            this.button12.Text = "C";
-            this.button12.UseVisualStyleBackColor = true;
+            this.BtnCopy14.Location = new System.Drawing.Point(1073, 357);
+            this.BtnCopy14.Name = "BtnCopy14";
+            this.BtnCopy14.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy14.TabIndex = 54;
+            this.BtnCopy14.Text = "C";
+            this.BtnCopy14.UseVisualStyleBackColor = true;
+            this.BtnCopy14.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(935, 269);
+            this.button13.Location = new System.Drawing.Point(1036, 269);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(31, 28);
             this.button13.TabIndex = 59;
             this.button13.Text = "G";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.Regenerar);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(573, 386);
+            this.label20.Location = new System.Drawing.Point(674, 386);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(171, 20);
             this.label20.TabIndex = 48;
@@ -692,33 +704,35 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(718, 268);
+            this.label21.Location = new System.Drawing.Point(819, 268);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(0, 20);
             this.label21.TabIndex = 44;
             // 
-            // button14
+            // BtnCopy15
             // 
-            this.button14.Location = new System.Drawing.Point(972, 386);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(31, 28);
-            this.button14.TabIndex = 55;
-            this.button14.Text = "C";
-            this.button14.UseVisualStyleBackColor = true;
+            this.BtnCopy15.Location = new System.Drawing.Point(1073, 386);
+            this.BtnCopy15.Name = "BtnCopy15";
+            this.BtnCopy15.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy15.TabIndex = 55;
+            this.BtnCopy15.Text = "C";
+            this.BtnCopy15.UseVisualStyleBackColor = true;
+            this.BtnCopy15.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(935, 235);
+            this.button15.Location = new System.Drawing.Point(1036, 235);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(31, 28);
             this.button15.TabIndex = 58;
             this.button15.Text = "G";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.Regenerar);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(718, 357);
+            this.label22.Location = new System.Drawing.Point(819, 357);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 20);
             this.label22.TabIndex = 47;
@@ -726,7 +740,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(718, 298);
+            this.label23.Location = new System.Drawing.Point(819, 298);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(0, 20);
             this.label23.TabIndex = 45;
@@ -735,7 +749,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(573, 415);
+            this.label24.Location = new System.Drawing.Point(674, 415);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(158, 20);
             this.label24.TabIndex = 56;
@@ -744,18 +758,18 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(718, 415);
+            this.label25.Location = new System.Drawing.Point(819, 415);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(0, 20);
             this.label25.TabIndex = 57;
             // 
-            // label26
+            // LabelRespBitcoinAddress
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(718, 328);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(0, 20);
-            this.label26.TabIndex = 46;
+            this.LabelRespBitcoinAddress.AutoSize = true;
+            this.LabelRespBitcoinAddress.Location = new System.Drawing.Point(845, 328);
+            this.LabelRespBitcoinAddress.Name = "LabelRespBitcoinAddress";
+            this.LabelRespBitcoinAddress.Size = new System.Drawing.Size(0, 20);
+            this.LabelRespBitcoinAddress.TabIndex = 46;
             // 
             // label27
             // 
@@ -775,6 +789,7 @@
             this.button16.TabIndex = 79;
             this.button16.Text = "C";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // label28
             // 
@@ -802,6 +817,7 @@
             this.button19.TabIndex = 92;
             this.button19.Text = "G";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.Regenerar);
             // 
             // label30
             // 
@@ -821,6 +837,7 @@
             this.button20.TabIndex = 91;
             this.button20.Text = "G";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.Regenerar);
             // 
             // label31
             // 
@@ -840,6 +857,7 @@
             this.button21.TabIndex = 81;
             this.button21.Text = "C";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button22
             // 
@@ -849,6 +867,7 @@
             this.button22.TabIndex = 90;
             this.button22.Text = "G";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.Regenerar);
             // 
             // button23
             // 
@@ -858,6 +877,7 @@
             this.button23.TabIndex = 80;
             this.button23.Text = "C";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // label32
             // 
@@ -877,6 +897,7 @@
             this.button24.TabIndex = 82;
             this.button24.Text = "C";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button25
             // 
@@ -886,6 +907,7 @@
             this.button25.TabIndex = 89;
             this.button25.Text = "G";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.Regenerar);
             // 
             // label33
             // 
@@ -913,6 +935,7 @@
             this.button26.TabIndex = 83;
             this.button26.Text = "C";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button27
             // 
@@ -922,6 +945,7 @@
             this.button27.TabIndex = 88;
             this.button27.Text = "G";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.Regenerar);
             // 
             // label35
             // 
@@ -949,6 +973,7 @@
             this.button28.TabIndex = 84;
             this.button28.Text = "C";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.CopyButton_Click);
             // 
             // button29
             // 
@@ -958,6 +983,7 @@
             this.button29.TabIndex = 87;
             this.button29.Text = "G";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.Regenerar);
             // 
             // label37
             // 
@@ -992,18 +1018,18 @@
             this.label42.TabIndex = 96;
             this.label42.Text = "label42";
             // 
-            // button17
+            // BtnCopy8
             // 
-            this.button17.Location = new System.Drawing.Point(468, 445);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(31, 28);
-            this.button17.TabIndex = 100;
-            this.button17.Text = "C";
-            this.button17.UseVisualStyleBackColor = true;
+            this.BtnCopy8.Location = new System.Drawing.Point(535, 445);
+            this.BtnCopy8.Name = "BtnCopy8";
+            this.BtnCopy8.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy8.TabIndex = 100;
+            this.BtnCopy8.Text = "C";
+            this.BtnCopy8.UseVisualStyleBackColor = true;
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(431, 445);
+            this.button18.Location = new System.Drawing.Point(498, 445);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(31, 28);
             this.button18.TabIndex = 99;
@@ -1020,26 +1046,26 @@
             this.label39.TabIndex = 97;
             this.label39.Text = "Peso y Altura:";
             // 
-            // label40
+            // LabelRespAlturaPeso
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(214, 445);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(0, 20);
-            this.label40.TabIndex = 98;
+            this.LabelRespAlturaPeso.AutoSize = true;
+            this.LabelRespAlturaPeso.Location = new System.Drawing.Point(214, 445);
+            this.LabelRespAlturaPeso.Name = "LabelRespAlturaPeso";
+            this.LabelRespAlturaPeso.Size = new System.Drawing.Size(0, 20);
+            this.LabelRespAlturaPeso.TabIndex = 98;
             // 
-            // button30
+            // BtnCopy9
             // 
-            this.button30.Location = new System.Drawing.Point(469, 475);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(31, 28);
-            this.button30.TabIndex = 104;
-            this.button30.Text = "C";
-            this.button30.UseVisualStyleBackColor = true;
+            this.BtnCopy9.Location = new System.Drawing.Point(536, 475);
+            this.BtnCopy9.Name = "BtnCopy9";
+            this.BtnCopy9.Size = new System.Drawing.Size(31, 28);
+            this.BtnCopy9.TabIndex = 104;
+            this.BtnCopy9.Text = "C";
+            this.BtnCopy9.UseVisualStyleBackColor = true;
             // 
             // button31
             // 
-            this.button31.Location = new System.Drawing.Point(432, 475);
+            this.button31.Location = new System.Drawing.Point(499, 475);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(31, 28);
             this.button31.TabIndex = 103;
@@ -1056,28 +1082,28 @@
             this.label43.TabIndex = 101;
             this.label43.Text = "Color Favorito:";
             // 
-            // label44
+            // LabelRespColorFav
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(215, 475);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(0, 20);
-            this.label44.TabIndex = 102;
+            this.LabelRespColorFav.AutoSize = true;
+            this.LabelRespColorFav.Location = new System.Drawing.Point(215, 475);
+            this.LabelRespColorFav.Name = "LabelRespColorFav";
+            this.LabelRespColorFav.Size = new System.Drawing.Size(0, 20);
+            this.LabelRespColorFav.TabIndex = 102;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1096, 719);
-            this.Controls.Add(this.button30);
+            this.ClientSize = new System.Drawing.Size(1218, 719);
+            this.Controls.Add(this.BtnCopy9);
             this.Controls.Add(this.button31);
             this.Controls.Add(this.label43);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.LabelRespColorFav);
+            this.Controls.Add(this.BtnCopy8);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.label39);
-            this.Controls.Add(this.label40);
+            this.Controls.Add(this.LabelRespAlturaPeso);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.button16);
@@ -1105,34 +1131,34 @@
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnCopy10);
+            this.Controls.Add(this.BtnCopy16);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.LabelRespNumCreditCard);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.BtnCopy12);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.BtnCopy11);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.BtnCopy13);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.BtnCopy14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.BtnCopy15);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
+            this.Controls.Add(this.LabelRespBitcoinAddress);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BtnCopy1);
             this.Controls.Add(this.label13);
@@ -1221,34 +1247,34 @@
         private Button BtnCopy7;
         private Label label3;
         private Label label8;
-        private Button button2;
-        private Button button3;
+        private Button BtnCopy10;
+        private Button BtnCopy16;
         private Label label9;
         private Button button4;
-        private Label label10;
+        private Label LabelRespNumCreditCard;
         private Button button5;
         private Label label15;
         private Button button6;
         private Label label16;
-        private Button button7;
+        private Button BtnCopy12;
         private Button button8;
-        private Button button9;
+        private Button BtnCopy11;
         private Label label17;
-        private Button button10;
+        private Button BtnCopy13;
         private Button button11;
         private Label label18;
         private Label label19;
-        private Button button12;
+        private Button BtnCopy14;
         private Button button13;
         private Label label20;
         private Label label21;
-        private Button button14;
+        private Button BtnCopy15;
         private Button button15;
         private Label label22;
         private Label label23;
         private Label label24;
         private Label label25;
-        private Label label26;
+        private Label LabelRespBitcoinAddress;
         private Label label27;
         private Button button16;
         private Label label28;
@@ -1275,13 +1301,13 @@
         private Label label38;
         private Label label41;
         private Label label42;
-        private Button button17;
+        private Button BtnCopy8;
         private Button button18;
         private Label label39;
-        private Label label40;
-        private Button button30;
+        private Label LabelRespAlturaPeso;
+        private Button BtnCopy9;
         private Button button31;
         private Label label43;
-        private Label label44;
+        private Label LabelRespColorFav;
     }
 }
